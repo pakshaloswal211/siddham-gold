@@ -128,16 +128,19 @@ header{
 section{
   max-width:1200px;
   margin:auto;
-  padding:90px 20px;
+  padding:120px 20px;
 }
 
 .section-light{background:#fff}
-.section-soft{background:var(--light)}
+.section-soft{
+  background:linear-gradient(180deg,#f6f8f7,#eef2f0);
+}
 
 section h3{
   font-family:'Playfair Display',serif;
   font-size:34px;
   color:var(--dark-green);
+  margin-bottom:50px;
 }
 
 .section-divider{
@@ -148,21 +151,47 @@ section h3{
   border-radius:3px;
 }
 
-/* GRID / CARDS */
+/* TEXT WIDTH CONTROL */
+section p,
+.card p{
+  max-width:640px;
+}
+
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:30px;
+  gap:50px;
 }
+
+/* CARDS */
 .card{
   background:#fff;
   border-radius:16px;
-  padding:28px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  padding:32px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
 }
 .card h4{
   color:var(--dark-green);
-  margin-bottom:10px;
+  margin-bottom:12px;
+}
+
+/* CATALOGUE */
+.catalogue-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:30px;
+}
+.catalogue-grid img{
+  width:100%;
+  border-radius:16px;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  transition:.3s ease;
+}
+.catalogue-grid img:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 35px rgba(0,0,0,0.25);
 }
 
 /* TESTIMONIALS */
@@ -171,27 +200,9 @@ section h3{
 }
 #testimonials strong{
   display:block;
-  margin-top:12px;
+  margin-top:14px;
   color:var(--dark-green);
   font-style:normal;
-}
-
-/* CATALOGUE */
-.catalogue-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-  gap:22px;
-}
-.catalogue-grid img{
-  width:100%;
-  border-radius:16px;
-  cursor:pointer;
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
-  transition:.3s ease;
-}
-.catalogue-grid img:hover{
-  transform:translateY(-5px);
-  box-shadow:0 14px 30px rgba(0,0,0,0.25);
 }
 
 /* LIGHTBOX */
@@ -207,7 +218,7 @@ section h3{
 .lightbox img{
   max-width:90%;
   max-height:90%;
-  border-radius:12px;
+  border-radius:14px;
 }
 
 /* CONTACT */
@@ -215,8 +226,8 @@ section h3{
   background:var(--light);
 }
 .map-container{
-  margin-top:30px;
-  border-radius:16px;
+  margin-top:40px;
+  border-radius:18px;
   overflow:hidden;
 }
 
@@ -225,7 +236,7 @@ footer{
   background:var(--dark-green);
   color:#ddd;
   text-align:center;
-  padding:24px;
+  padding:26px;
 }
 
 /* WHATSAPP */
@@ -271,7 +282,10 @@ footer{
   </video>
   <div class="hero-content">
     <h2>Where Service Shines as Bright as Gold</h2>
-    <p>Custom-crafted gold jewellery & wholesale Mangalsutra Mani<br>Trusted for 9+ years in Pune</p>
+    <p>
+      Custom-crafted gold jewellery & wholesale Mangalsutra Mani<br>
+      Trusted for 9+ years in Pune
+    </p>
     <a class="btn" href="#catalogue">View Catalogue</a>
     <a class="btn outline" href="https://wa.me/918115545151" target="_blank">WhatsApp Enquiry</a>
   </div>
@@ -280,37 +294,26 @@ footer{
 <!-- TRUST -->
 <section class="section-light">
   <div class="grid">
-    <div class="card"><h4>9+ Years of Trust</h4><p>Serving customers with honesty and craftsmanship.</p></div>
-    <div class="card"><h4>Custom Jewellery</h4><p>Made-to-order gold jewellery.</p></div>
-    <div class="card"><h4>Wholesale Mani</h4><p>All types of Mangalsutra Mani.</p></div>
-    <div class="card"><h4>Personal Service</h4><p>Transparent and dedicated guidance.</p></div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="section-soft">
-  <h3>What Our Customers Say</h3>
-  <div class="section-divider"></div>
-  <div class="grid">
-    <div class="card">“Excellent craftsmanship and trustworthy service.”<strong>— Customer, Pune</strong></div>
-    <div class="card">“Reliable wholesale quality every time.”<strong>— Retail Buyer</strong></div>
-    <div class="card">“Transparent pricing and beautiful designs.”<strong>— Local Customer</strong></div>
+    <div class="card"><h4>9+ Years of Trust</h4><p>Built on precision, integrity, and long-term relationships.</p></div>
+    <div class="card"><h4>Custom Jewellery</h4><p>Bespoke gold jewellery crafted to your vision.</p></div>
+    <div class="card"><h4>Wholesale Mani</h4><p>Trusted wholesale specialists in Mangalsutra Mani.</p></div>
+    <div class="card"><h4>Personal Service</h4><p>Thoughtful guidance with complete transparency.</p></div>
   </div>
 </section>
 
 <!-- COLLECTIONS -->
-<section id="collections" class="section-light">
+<section id="collections" class="section-soft">
   <h3>Our Collections</h3>
   <div class="section-divider"></div>
   <div class="grid">
-    <div class="card"><h4>Gold Jewellery</h4><p>Rings, chains, bangles & earrings.</p></div>
-    <div class="card"><h4>Custom Jewellery</h4><p>Designed to your preference.</p></div>
-    <div class="card"><h4>Mangalsutra Mani</h4><p>Wholesale specialists.</p></div>
+    <div class="card"><h4>Gold Jewellery</h4><p>Rings, chains, bangles and earrings with timeless appeal.</p></div>
+    <div class="card"><h4>Custom Jewellery</h4><p>Designed and crafted to reflect your individuality.</p></div>
+    <div class="card"><h4>Mangalsutra Mani</h4><p>Consistent quality and trusted wholesale supply.</p></div>
   </div>
 </section>
 
-<!-- CATALOGUE -->
-<section id="catalogue" class="section-soft">
+<!-- CATALOGUE (MOVED ABOVE TESTIMONIALS) -->
+<section id="catalogue" class="section-light">
   <h3>Jewellery Catalogue</h3>
   <div class="section-divider"></div>
   <div class="catalogue-grid">
@@ -323,6 +326,17 @@ footer{
   </div>
 </section>
 
+<!-- TESTIMONIALS (NOW AFTER CATALOGUE) -->
+<section id="testimonials" class="section-soft">
+  <h3>What Our Customers Say</h3>
+  <div class="section-divider"></div>
+  <div class="grid">
+    <div class="card">“Excellent craftsmanship and a truly trustworthy experience.”<strong>— Customer, Pune</strong></div>
+    <div class="card">“Consistent quality and reliable wholesale service.”<strong>— Retail Buyer</strong></div>
+    <div class="card">“Beautiful designs with transparent guidance.”<strong>— Local Customer</strong></div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <h3>Visit Our Store</h3>
@@ -330,7 +344,8 @@ footer{
   <p>Raviwar Peth, Pune</p>
   <p>📸 <a href="https://www.instagram.com/siddhamgold05/" target="_blank">@siddhamgold05</a></p>
   <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.250816578934!2d73.85763977484547!3d18.51756448257549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1f5816315e3%3A0xa43f7b4dd0a20406!2sSiddham%20Gold!5e0!3m2!1sen!2sin!4v1767696583809!5m2!1sen!2sin"
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.250816578934!2d73.85763977484547!3d18.51756448257549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1f5816315e3%3A0xa43f7b4dd0a20406!2sSiddham%20Gold!5e0!3m2!1sen!2sin!4v1767696583809!5m2!1sen!2sin"
       width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
   </div>
 </section>
@@ -352,3 +367,4 @@ function openLightbox(img){
 
 </body>
 </html>
+
