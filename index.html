@@ -3,26 +3,21 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- PRIMARY SEO -->
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- SEO -->
 <title>Siddham Gold | Trusted Gold Jewellery & Mangalsutra Mani in Pune</title>
 <meta name="description" content="Siddham Gold is a trusted gold jewellery shop in Raviwar Peth, Pune. Specialists in custom gold jewellery and wholesale Mangalsutra Mani with 9+ years of experience.">
 <meta name="keywords" content="Siddham Gold, gold jewellery Pune, jewellery shop Raviwar Peth, mangalsutra mani wholesale, custom gold jewellery Pune">
-<meta name="author" content="Siddham Gold">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SOCIAL SHARING (WHATSAPP / INSTAGRAM) -->
+<!-- SOCIAL PREVIEW -->
 <meta property="og:title" content="Siddham Gold | Where Service Shines as Bright as Gold">
 <meta property="og:description" content="Custom-crafted gold jewellery & wholesale Mangalsutra Mani. Trusted for 9+ years in Pune.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pakshaloswal211.github.io/siddham-gold/">
 <meta property="og:image" content="https://pakshaloswal211.github.io/siddham-gold/preview.jpg">
-
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- PERFORMANCE HINTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -33,218 +28,157 @@
   --gold:#c9a24d;
   --light:#f6f8f7;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
-
-body{
-  font-family:'Poppins',sans-serif;
-  background:#fff;
-  color:#222;
-  line-height:1.6;
-}
-
+body{font-family:'Poppins',sans-serif;color:#222;line-height:1.6}
 a{text-decoration:none;color:inherit}
 
 /* HEADER */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:#fff;
-  border-bottom:1px solid #e5e5e5;
-  z-index:1000;
-}
-.nav{
-  max-width:1200px;
-  margin:auto;
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.nav h1{
-  font-family:'Playfair Display',serif;
-  color:var(--dark-green);
-  font-size:26px;
-}
-.nav a{
-  margin-left:20px;
-  font-weight:500;
-  color:var(--dark-green);
-}
+header{position:fixed;top:0;width:100%;background:#fff;border-bottom:1px solid #e5e5e5;z-index:1000}
+.nav{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:42px}
+.brand h1{font-family:'Playfair Display',serif;color:var(--dark-green);font-size:26px}
+.nav a{margin-left:20px;font-weight:500;color:var(--dark-green)}
 
 /* HERO */
-.hero{
-  margin-top:80px;
-  height:90vh;
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  background:var(--dark-green);
-}
-.hero video{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:.35;
-}
-.hero-content{
-  position:relative;
-  max-width:720px;
-  padding:20px;
-}
-.hero h2{
-  font-family:'Playfair Display',serif;
-  font-size:44px;
-}
-.hero p{
-  margin:15px 0 25px;
-  font-size:18px;
-}
+.hero{margin-top:80px;height:90vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:var(--dark-green)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero-content{position:relative;max-width:720px;padding:20px}
+.hero h2{font-family:'Playfair Display',serif;font-size:44px}
+.hero p{margin:15px 0 25px;font-size:18px}
 
-.btn{
-  display:inline-block;
-  padding:12px 26px;
-  margin:6px;
-  border-radius:30px;
-  background:var(--gold);
-  font-weight:500;
-}
-.btn.outline{
-  background:transparent;
-  border:2px solid #fff;
-  color:#fff;
-}
+.btn{display:inline-block;padding:12px 26px;margin:6px;border-radius:30px;background:var(--gold);font-weight:500}
+.btn.outline{background:transparent;border:2px solid #fff;color:#fff}
 
 /* SECTIONS */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:80px 20px;
-}
-section h3{
-  font-family:'Playfair Display',serif;
-  font-size:32px;
-  color:var(--dark-green);
-  margin-bottom:25px;
-}
+section{max-width:1200px;margin:auto;padding:80px 20px}
+section h3{font-family:'Playfair Display',serif;font-size:32px;color:var(--dark-green);margin-bottom:25px}
 
-/* GRID / CARDS */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:30px;
-}
-.card{
-  border:1px solid #e5e5e5;
-  border-radius:12px;
-  padding:28px;
-}
-.card h4{
-  color:var(--dark-green);
-  margin-bottom:10px;
-}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+.card{border:1px solid #e5e5e5;border-radius:12px;padding:28px}
+.card h4{color:var(--dark-green);margin-bottom:10px}
 
 /* TESTIMONIALS */
-#testimonials .card{
-  font-style:italic;
-}
-#testimonials strong{
-  display:block;
-  margin-top:12px;
-  color:var(--dark-green);
-  font-style:normal;
-}
+#testimonials .card{font-style:italic}
+#testimonials strong{display:block;margin-top:12px;color:var(--dark-green);font-style:normal}
 
 /* CATALOGUE */
-.catalogue-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:22px;
-}
-.catalogue-grid img{
-  width:100%;
-  border-radius:12px;
-  cursor:pointer;
-  transition:.3s;
-}
-.catalogue-grid img:hover{
-  transform:scale(1.03);
-}
+.catalogue-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:22px}
+.catalogue-grid img{width:100%;border-radius:12px;cursor:pointer}
 
 /* LIGHTBOX */
-.lightbox{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.85);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  z-index:2000;
-}
-.lightbox img{
-  max-width:90%;
-  max-height:90%;
-  border-radius:10px;
-}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:2000}
+.lightbox img{max-width:90%;max-height:90%}
 
 /* CONTACT */
-.contact{
-  background:var(--light);
-}
-
-/* MAP */
-.map-container{
-  margin-top:30px;
-  border-radius:12px;
-  overflow:hidden;
-}
+.contact{background:var(--light)}
+.map-container{margin-top:30px;border-radius:12px;overflow:hidden}
 
 /* FOOTER */
-footer{
-  background:var(--dark-green);
-  color:#ddd;
-  text-align:center;
-  padding:20px;
-}
+footer{background:var(--dark-green);color:#ddd;text-align:center;padding:20px}
 
-/* MOBILE */
-@media(max-width:768px){
-  .hero h2{font-size:34px}
-  section{padding:60px 16px}
-  .catalogue-grid{gap:16px}
-}
-
-/* STICKY WHATSAPP BUTTON */
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:28px;
-  z-index:3000;
-  box-shadow:0 4px 12px rgba(0,0,0,.3);
-}
-.whatsapp-float:hover{
-  transform:scale(1.05);
-}
+/* WHATSAPP */
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:3000}
 </style>
 </head>
 
 <body>
-<!-- BODY CONTENT REMAINS EXACTLY THE SAME AS YOUR LAST VERSION -->
-<!-- (No functional changes below this point) -->
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="logo.png" alt="Siddham Gold Logo">
+      <h1>Siddham Gold</h1>
+    </div>
+    <div>
+      <a href="#collections">Collections</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="Siddham_Gold.MP4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h2>Where Service Shines as Bright as Gold</h2>
+    <p>Custom-crafted gold jewellery & wholesale Mangalsutra Mani<br>Trusted for 9+ years in Pune</p>
+    <a class="btn" href="#catalogue">View Catalogue</a>
+    <a class="btn outline" href="https://wa.me/918115545151" target="_blank">WhatsApp Enquiry</a>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section>
+  <div class="grid">
+    <div class="card"><h4>9+ Years of Trust</h4><p>Serving customers with honesty and craftsmanship.</p></div>
+    <div class="card"><h4>Custom Jewellery</h4><p>Made-to-order gold jewellery.</p></div>
+    <div class="card"><h4>Wholesale Mani</h4><p>All types of Mangalsutra Mani.</p></div>
+    <div class="card"><h4>Personal Service</h4><p>Transparent and dedicated guidance.</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <h3>What Our Customers Say</h3>
+  <div class="grid">
+    <div class="card">“Excellent craftsmanship and trustworthy service.”<strong>— Customer, Pune</strong></div>
+    <div class="card">“Reliable wholesale quality every time.”<strong>— Retail Buyer</strong></div>
+    <div class="card">“Transparent pricing and beautiful designs.”<strong>— Local Customer</strong></div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <h3>Our Collections</h3>
+  <div class="grid">
+    <div class="card"><h4>Gold Jewellery</h4><p>Rings, chains, bangles & earrings.</p></div>
+    <div class="card"><h4>Custom Jewellery</h4><p>Designed to your preference.</p></div>
+    <div class="card"><h4>Mangalsutra Mani</h4><p>Wholesale specialists.</p></div>
+  </div>
+</section>
+
+<!-- CATALOGUE -->
+<section id="catalogue">
+  <h3>Jewellery Catalogue</h3>
+  <div class="catalogue-grid">
+    <img src="img1.jpg" onclick="openLightbox(this)">
+    <img src="img2.jpg" onclick="openLightbox(this)">
+    <img src="img3.jpg" onclick="openLightbox(this)">
+    <img src="img4.jpg" onclick="openLightbox(this)">
+    <img src="img5.jpg" onclick="openLightbox(this)">
+    <img src="img6.jpg" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h3>Visit Our Store</h3>
+  <p>Raviwar Peth, Pune</p>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!..." width="100%" height="350" style="border:0"></iframe>
+  </div>
+</section>
+
+<footer>© Siddham Gold</footer>
+
+<a href="https://wa.me/918115545151" class="whatsapp-float">💬</a>
+
+<div class="lightbox" id="lightbox" onclick="this.style.display='none'">
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(img){
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').style.display='flex';
+}
+</script>
+
 </body>
 </html>
+
