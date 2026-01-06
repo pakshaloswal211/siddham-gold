@@ -164,16 +164,27 @@ section p,
   gap:50px;
 }
 
-/* CARDS */
+/* PREMIUM TEXTURED CARDS */
 .card{
-  background:#fff;
-  border-radius:16px;
-  padding:32px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.015),
+      rgba(0,0,0,0.015) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+  border-radius:18px;
+  padding:36px;
+  box-shadow:0 14px 32px rgba(0,0,0,0.08);
 }
 .card h4{
   color:var(--dark-green);
   margin-bottom:12px;
+}
+.card p{
+  margin-top:8px;
 }
 
 /* CATALOGUE */
@@ -312,7 +323,7 @@ footer{
   </div>
 </section>
 
-<!-- CATALOGUE (MOVED ABOVE TESTIMONIALS) -->
+<!-- CATALOGUE -->
 <section id="catalogue" class="section-light">
   <h3>Jewellery Catalogue</h3>
   <div class="section-divider"></div>
@@ -326,7 +337,7 @@ footer{
   </div>
 </section>
 
-<!-- TESTIMONIALS (NOW AFTER CATALOGUE) -->
+<!-- TESTIMONIALS -->
 <section id="testimonials" class="section-soft">
   <h3>What Our Customers Say</h3>
   <div class="section-divider"></div>
@@ -367,4 +378,3 @@ function openLightbox(img){
 
 </body>
 </html>
-
